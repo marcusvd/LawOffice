@@ -1,10 +1,14 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgxModule } from './Company/shared/modules/ngx.module';
-import { SharedModule } from './Company/shared/modules/shared.module';
+import { ClientModule } from './company/main-components/client/modules/client.module';
+import { NgxModule } from './company/shared/modules/ngx.module';
+import { SharedModule } from './company/shared/modules/shared.module';
+
+
 
 
 @NgModule({
@@ -15,10 +19,13 @@ import { SharedModule } from './Company/shared/modules/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     SharedModule,
-    NgxModule
+    NgxModule,
+    ClientModule
   ],
   providers: [],
+  exports:[],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

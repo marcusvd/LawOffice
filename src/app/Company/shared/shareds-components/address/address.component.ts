@@ -3,9 +3,9 @@ import { Component, Injectable, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 
 //import { UnitValidatorsService } from 'src/app/organization/services/admin/unit/unit-validators.service';
-import { ValidatorsGlobal } from '../validators-global';
+import { ValidatorsGlobal } from 'src/app/company/shared/helpers/validators-global';
 @Component({
-  selector: 'app-address',
+  selector: 'address',
   templateUrl: './address.component.html',
   styleUrls: ['./address.component.css']
 
