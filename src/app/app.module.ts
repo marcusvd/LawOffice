@@ -11,9 +11,13 @@ import { SharedModule } from './company/shared/modules/shared.module';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
+
+
 
   ],
   imports: [
