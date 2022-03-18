@@ -11,6 +11,7 @@ import { ContactComponent } from "../shareds-components/contact/contact.componen
 import { GeneralRegistersComponent } from "../shareds-components/general-registers/general-registers.component";
 import { OfficeCreateComponent } from 'src/app/company/main-components/office/office-create/office-create.component';
 import { AppointmentComponent } from 'src/app/company/main-components/appointment/appointment.component';
+import { LegalProcessCreateComponent } from "../../main-components/legal-process/legal-process-create/legal-process-create.component";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { AppointmentComponent } from 'src/app/company/main-components/appointmen
     ClientCreateComponent,
     LawyersCreateComponent,
     OfficeCreateComponent,
-    AppointmentComponent
+    AppointmentComponent,
+    LegalProcessCreateComponent,
+
   ],
   imports: [
     NgxModule,
