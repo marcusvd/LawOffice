@@ -5,6 +5,8 @@ export class OfficeDto {
 
   id: number;
   name: string;
+  source: boolean;
+  responsible:boolean;
   address:AddressDto;
   contacts: ContactDto;
 
