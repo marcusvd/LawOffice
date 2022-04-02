@@ -11,8 +11,9 @@ import { ContactComponent } from "../shareds-components/contact/contact.componen
 import { GeneralRegistersComponent } from "../shareds-components/general-registers/general-registers.component";
 import { OfficeCreateComponent } from 'src/app/company/main-components/office/office-create/office-create.component';
 import { AppointmentComponent } from 'src/app/company/main-components/appointment/appointment.component';
-import { LegalProcessCreateComponent } from "../../main-components/legal-process/legal-process-create/legal-process-create.component";
+import { LegalProcessCreateComponent } from "../../main-components/folder-process/folder-process-create/folder-process-create.component";
 import { ResultForecastCreateComponent } from '../../main-components/result-forecast-create/result-forecast-create.component';
+import { ValuesCreateComponent } from 'src/app/company/main-components/values/values-create/values-create.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ResultForecastCreateComponent } from '../../main-components/result-fore
     OfficeCreateComponent,
     AppointmentComponent,
     LegalProcessCreateComponent,
-    ResultForecastCreateComponent
+    ResultForecastCreateComponent,
+    ValuesCreateComponent
 
 
   ],

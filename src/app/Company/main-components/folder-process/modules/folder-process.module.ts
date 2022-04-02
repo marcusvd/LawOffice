@@ -15,6 +15,6 @@ import { SharedModule } from "src/app/company/shared/modules/shared.module";
   exports: [ ]
 })
 
-export class LegalProcessModule {
+export class FolderProcessModule {
 
 }
