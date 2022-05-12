@@ -14,7 +14,9 @@ import { AppointmentComponent } from 'src/app/company/main-components/appointmen
 import { LegalProcessCreateComponent } from "../../main-components/folder-process/folder-process-create/folder-process-create.component";
 import { ResultForecastCreateComponent } from '../../main-components/result-forecast-create/result-forecast-create.component';
 import { ValuesCreateComponent } from 'src/app/company/main-components/values/values-create/values-create.component';
-
+import { RequestedObjectComponent } from 'src/app/company/main-components/requested-object/requested-object.component';
+import { ObjectRequestedCreateService } from "../../main-components/requested-object/services/object-requested-create-service";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -27,17 +29,15 @@ import { ValuesCreateComponent } from 'src/app/company/main-components/values/va
     AppointmentComponent,
     LegalProcessCreateComponent,
     ResultForecastCreateComponent,
-    ValuesCreateComponent
-
-
+    ValuesCreateComponent,
+    RequestedObjectComponent
   ],
   imports: [
     NgxModule,
     ReactiveFormsModule,
     FormsModule,
-    CommonModule
-
-
+    CommonModule,
+    RouterModule
   ],
   exports: [
     GeneralRegistersComponent,
@@ -45,8 +45,9 @@ import { ValuesCreateComponent } from 'src/app/company/main-components/values/va
     AddressComponent,
     OfficeCreateComponent,
     AppointmentComponent
+
   ],
-  providers: []
+  providers: [ObjectRequestedCreateService]
 })
 
 export class SharedModule {

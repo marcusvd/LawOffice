@@ -51,6 +51,8 @@ export class AddressComponent implements OnInit {
     this._ValGlobal._FormAddress.controls['estado'].setValue(cep.uf);
   }
   //#endregion
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this._ValGlobal.address();
+   }
 
 }
