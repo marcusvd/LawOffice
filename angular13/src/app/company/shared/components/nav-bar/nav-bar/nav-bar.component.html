@@ -8,29 +8,33 @@
   </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}" style="color: white;">
             <div class="pt-3"></div>
-            <a class="navbar-brand" href="#"><img src="../assets/semfundo.png" alt="" style="width:70px; height: 50px;"></a>
+            <a class="navbar-brand" href="#"><img src="../assets/semfundo.png" alt="" style="width:70px; height:50px; margin-left: 30px;"></a>
+            <div class="pt-3"></div>
+
+
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <button type="button" class="btn btn-primary btn-menu-width">Agenda</button>
+                    <button type="button" class="btn btn-primary btn-menu-width">AGENDA</button>
                 </li>
                 <div class="space-beteween"></div>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-primary btn-menu-width">Advogados</button>
-                </li>
+                <!-- <li class="nav-item">
+                    <button type="button" class="btn btn-primary btn-menu-width">ADVOGADOS</button>
+                </li> -->
                 <div class="space-beteween"></div>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-primary btn-menu-width">Cadastros</button>
+                    <button type="button" class="btn btn-primary btn-menu-width" [routerLink]="['registers']">CADASTRO</button>
                 </li>
-                <div class="space-beteween"></div>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-primary btn-menu-width">TESTES</button>
-                </li>
+                <!-- <div class="space-beteween"></div>
+                    <li class="nav-item">
+                      <button type="button" class="btn btn-primary btn-menu-width">TESTES</button>
+                    </li> -->
             </ul>
 
-            <div>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Processos..." aria-label="Search" style="float: right;">
-                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+            <div class="justify-content-center">
+                <form class="d-flex justify-content-center">
+                    <input class="form-control me-2" type="search" placeholder="Processos..." aria-label="Search">
+
+                    <button class="btn btn-primary btn-menu-width" type="submit">Buscar</button>
                 </form>
             </div>
         </div>

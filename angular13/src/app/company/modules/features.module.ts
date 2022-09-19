@@ -5,10 +5,13 @@ import { AppointmentModule } from "../components/appointment/modules/appointment
 import { ClientModule } from "../components/client/modules/client.module";
 import { ContactModule } from "../components/contact/modules/contact.module";
 import { RequestObjectModule } from "../components/requested-object/modules/request-object.module";
+import { ResultForecastCreateComponent } from "../components/result-forecast/components/result-forecast-create/result-forecast-create.component";
+import { ValuesCreateComponent } from "../components/values/components/values-create/values-create.component";
 import { AngularImportsModule } from "./angular-imports.module";
 
 @NgModule({
   declarations: [
+
   ],
 
   imports: [
@@ -17,6 +20,7 @@ import { AngularImportsModule } from "./angular-imports.module";
     ClientModule,
     RequestObjectModule,
     AppointmentModule,
+
   ],
 
   exports: [

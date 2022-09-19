@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { ValuesCreateComponent } from './company/components/values/components/values-create/values-create.component';
+
 import { AngularImportsModule } from './company/modules/angular-imports.module';
 import { FeaturesModule } from './company/modules/features.module';
 import { OutsourcedModule } from './company/modules/outsourced.module';
@@ -13,6 +15,8 @@ import { SharedModule } from './company/shared/modules/shared.module';
 @NgModule({
   declarations: [
     AppComponent,
+    ValuesCreateComponent,
+
   ],
   imports: [
     //angular
